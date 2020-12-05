@@ -20,14 +20,14 @@ Fig2. OOP robot local axes
 
 Tab1. Denavit-Hartenberg table
 
-  | $theta_i$ | $sigma_i$ | $lambda_i$ | $alpha_i$
------------- | ------------- | ------------ | ------------- | ------------
-0->1 | Content from cell 2| Content from cell 2| Content from cell 2| Content from cell 2
-1->2 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
-2->3 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
-3->4 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
-4->5 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
-5->6 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
+|  | $theta_i$ | $sigma_i$ | $lambda_i$ | $alpha_i$|
+|------------ | ------------- | ------------ | ------------- | ------------|
+|0->1 | Content from cell 2| Content from cell 2| Content from cell 2| Content from cell 2|
+|1->2 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2|
+|2->3 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2|
+|3->4 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2|
+|4->5 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2|
+|5->6 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2|
 
 
 #### Setup
