@@ -1,11 +1,11 @@
 # OOP robot simulation
 
-#### Technologies
+### Technologies
 Project was created and tested with:
 * Windows 10
 * Python 3.6.5
 
-#### Description
+### Description
 This project allow user to simulate movements of robotic arm (OOP robot). User can choose lengths of robot elements, limitations of variable parameters such as angles and shifting element length, initial position of each joint and parameters of working area such as center position and radius.
 
 This project was created based on following schemas and table:
@@ -29,7 +29,7 @@ Tab1. Denavit-Hartenberg table
 |4->5 | 0| L2 + σ| 0| 0|
 
 
-#### Setup
+### Setup
 - Run following block of commands in oop_robot_simulation\ catalog:
 ```
 python -m virtualenv venv
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 - Set all parameters in oop_robot_data.json
 
 
-#### Run
+### Run
 Go to oop_robot_simulation\ and run command:
 ```
 python oop_robot_simulation.py
