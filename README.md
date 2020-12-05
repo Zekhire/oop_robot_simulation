@@ -13,10 +13,6 @@ This project allow user to simulate movements of robotic arm (OOP robot). User c
 * fourth - new σ1 (if first == 1) or new z (if first == 0)
 * fifth  - number of intermediate steps
 
-This project was created based on following schemas and table:
-* Windows 10
-* Python 3.8.2
-
 Fig1. OOP robot scheme
 
 <img src="/images/robot.JPG" width="450">
