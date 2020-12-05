@@ -8,7 +8,7 @@
     {
         "theta1_min": -1.57,
         "theta1_max":  1.57,
-        "theta2_min":  0.79,
+        "theta2_min": -0.79,
         "theta2_max":  1.57,
         "sigma_min": 0,
         "sigma_max": 1

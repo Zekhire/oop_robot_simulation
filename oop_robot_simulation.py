@@ -62,12 +62,12 @@ class Robot_Element:
 class RRP_Robot:
     def __init__(self, oop_robot_data):
         # constant attributes
-        elements_lengths_data = oop_robot_data["working_area"]
+        elements_lengths_data = oop_robot_data["elements_lengths"]
         self.l1 = elements_lengths_data["l1"]
         self.l2 = elements_lengths_data["l2"]
 
         # limitations
-        limitations_data = oop_robot_data["working_area"]
+        limitations_data = oop_robot_data["limitations"]
         self.theta1_min = limitations_data["theta1_min"]
         self.theta1_max = limitations_data["theta1_max"]
         self.theta2_min = limitations_data["theta2_min"]
@@ -81,7 +81,7 @@ class RRP_Robot:
         self.radius = working_area_data["radius"]
 
         # variable attributes
-        initial_position_data = oop_robot_data["working_area"]
+        initial_position_data = oop_robot_data["initial_position"]
         self.theta1 = initial_position_data["theta1"]
         self.theta2 = initial_position_data["theta2"]
         self.sigma  = initial_position_data["sigma"]
