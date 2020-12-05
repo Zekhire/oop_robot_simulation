@@ -6,9 +6,16 @@ Project was created and tested with:
 * Python 3.8.2
 
 ### Description
-This project allow user to simulate movements of robotic arm (OOP robot). User can choose lengths of robot elements, limitations of variable parameters such as angles and shifting element length, initial position of each joint and parameters of working area such as center position and radius.
+This project allow user to simulate movements of robotic arm (OOP robot). User can choose lengths of robot elements, limitations of variable parameters such as angles and shifting element length, initial position of each joint and parameters of working area such as center position and radius. Program works in infinity loop. In each iteration user provide 5 values (each after enter): 
+* first  - 1->for forward kinematics, 0->for inverse kinematics
+* second - new ϑ1 (if first == 1) or new x (if first == 0)
+* third  - new ϑ2 (if first == 1) or new y (if first == 0)
+* fourth - new σ1 (if first == 1) or new z (if first == 0)
+* fifth  - number of intermediate steps
 
 This project was created based on following schemas and table:
+* Windows 10
+* Python 3.8.2
 
 Fig1. OOP robot scheme
 
