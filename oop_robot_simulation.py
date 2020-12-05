@@ -7,6 +7,8 @@ from multiprocessing import Process, Queue
 import time
 import queue
 import pandas as pd
+import json
+
 
 class Robot_Element:
     def update_dh_matrix(self, theta_i, sigma_i, lamda_i, alpha_i):
@@ -58,29 +60,31 @@ class Robot_Element:
 
 
 class RRP_Robot:
-    def __init__(self,):
-        # O================================O
-        #        Editable parameters
-        # O================================O
-
+    def __init__(self, oop_robot_data):
         # constant attributes
-        self.l1 = 1
-        self.l2 = 1
-        self.theta1_min = -np.pi/2
-        self.theta1_max =  np.pi/2
-        self.theta2_min = -np.pi/4
-        self.theta2_max =  np.pi/2
-        self.sigma_min = 0
-        self.sigma_max = 1
+        elements_lengths_data = oop_robot_data["working_area"]
+        self.l1 = elements_lengths_data["l1"]
+        self.l2 = elements_lengths_data["l2"]
+
+        # limitations
+        limitations_data = oop_robot_data["working_area"]
+        self.theta1_min = limitations_data["theta1_min"]
+        self.theta1_max = limitations_data["theta1_max"]
+        self.theta2_min = limitations_data["theta2_min"]
+        self.theta2_max = limitations_data["theta2_max"]
+        self.sigma_min  = limitations_data["sigma_min"]
+        self.sigma_max  = limitations_data["sigma_max"]
 
         # working area
-        self.center = np.array([1.5, 0, 1])
-        self.radius = 1
+        working_area_data = oop_robot_data["working_area"]
+        self.center = np.array(working_area_data["center"])
+        self.radius = working_area_data["radius"]
 
         # variable attributes
-        self.theta1 = 0
-        self.theta2 = 0
-        self.sigma  = 0
+        initial_position_data = oop_robot_data["working_area"]
+        self.theta1 = initial_position_data["theta1"]
+        self.theta2 = initial_position_data["theta2"]
+        self.sigma  = initial_position_data["sigma"]
 
         # Denavit - Hartenberg notation array for RRP robot
         self.dh_notation_array = self.__create_dh_notation_array(self.theta1, self.theta2, self.sigma)
@@ -369,9 +373,9 @@ def visual(qsv, qvs):
     plt.show()
 
 
-def simulation():
+def simulation(oop_robot_data):
     # Prepare objects for simulation and visualization
-    rrp_robot = RRP_Robot()
+    rrp_robot = RRP_Robot(oop_robot_data)
     visual_controller = Visual_Controller(rrp_robot, [0], [0], [0])
 
     # Start plotting process
@@ -421,4 +425,5 @@ def simulation():
 
 
 if __name__ == "__main__":
-    simulation()
+    oop_robot_data = json.load(open("oop_robot_data.json", "r"))
+    simulation(oop_robot_data)

@@ -1,0 +1,27 @@
+{
+    "elements_lengths":
+    {
+        "l1": 1,
+        "l2": 1
+    },
+    "limitations":
+    {
+        "theta1_min": -1.57,
+        "theta1_max":  1.57,
+        "theta2_min":  0.79,
+        "theta2_max":  1.57,
+        "sigma_min": 0,
+        "sigma_max": 1
+    },
+    "working_area":
+    {
+        "center": [1.5, 0, 1],
+        "radius": 1
+    },
+    "initial_position":
+    {
+        "theta1": 0,
+        "theta2": 0,
+        "sigma": 0
+    }
+}
