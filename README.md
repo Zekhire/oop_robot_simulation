@@ -3,7 +3,7 @@
 ### Technologies
 Project was created and tested with:
 * Windows 10
-* Python 3.6.5
+* Python 3.8.2
 
 ### Description
 This project allow user to simulate movements of robotic arm (OOP robot). User can choose lengths of robot elements, limitations of variable parameters such as angles and shifting element length, initial position of each joint and parameters of working area such as center position and radius.
