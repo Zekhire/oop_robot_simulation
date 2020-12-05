@@ -9,19 +9,25 @@ Project was created and tested with:
 This project allow user to simulate movements of robotic arm (OOP robot). User can choose lengths of robot elements, limitations of variable parameters such as angles and shifting element length, initial position of each joint and parameters of working area such as center position and radius.
 
 This project was created based on following schemas and table:
+
 Fig1. OOP robot scheme
+
 ![robot scheme](/images/robot.JPG)
+
 Fig2. OOP robot local axes
+
 ![robot axes](/images/axes.JPG)
+
 Tab1. Denavit-Hartenberg table
+
   | $theta_i$ | $sigma_i$ | $lambda_i$ | $alpha_i$
 ------------ | ------------- | ------------ | ------------- | ------------
-0->1 | Content from cell 2
-1->2 | Content in the second column
-2->3 | Content in the second column
-3->4 | Content in the second column
-4->5 | Content in the second column
-5->6 | Content in the second column
+0->1 | Content from cell 2| Content from cell 2| Content from cell 2| Content from cell 2
+1->2 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
+2->3 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
+3->4 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
+4->5 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
+5->6 | Content in the second column| Content from cell 2| Content from cell 2| Content from cell 2
 
 
 #### Setup
