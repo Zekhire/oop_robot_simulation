@@ -12,7 +12,7 @@ This project was created based on following schemas and table:
 
 Fig1. OOP robot scheme
 
-![robot scheme](/images/robot.JPG)
+![robot scheme](/images/robot.JPG=303x202)
 
 Fig2. OOP robot local axes
 
@@ -21,12 +21,12 @@ Fig2. OOP robot local axes
 Tab1. Denavit-Hartenberg table
 
 |  | ϑi | σi | λi | αi|
-|------------ | ------------- | ------------ | ------------- | ------------|
-|0->1 | ϑ1| L1| 0 | π/2|
-|1->2 | ϑ2| 0 | 0 | -π/2|
-|2->3 | -π/2| 0 | 0 | 0 |
-|3->4 | 0| 0 | 0 | -π/2|
-|4->5 | 0 | L2 + σ| 0 | 0|
+|- | -- | -- | -- | - |
+|0->1 | ϑ1| L1| 0| π/2|
+|1->2 | ϑ2| 0 | 0| -π/2|
+|2->3 | -π/2| 0| 0| 0|
+|3->4 | 0| 0| 0| -π/2|
+|4->5 | 0| L2 + σ| 0| 0|
 
 
 #### Setup
