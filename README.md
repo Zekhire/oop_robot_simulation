@@ -12,7 +12,7 @@ This project was created based on following schemas and table:
 
 Fig1. OOP robot scheme
 
-![robot scheme](/images/robot.JPG=303x202)
+![robot scheme](/images/robot.JPG =303x202)
 
 Fig2. OOP robot local axes
 
